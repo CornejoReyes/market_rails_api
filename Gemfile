@@ -39,6 +39,12 @@ group :development, :test do
   gem 'byebug', platform: :mri
 end
 
+group :test do
+    gem "rspec-rails", "~> 2.14"
+    gem "factory_girl_rails"
+    gem 'ffaker'
+end
+
 gem 'active_model_serializers'
 
 group :development do
